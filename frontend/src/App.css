@@ -1,0 +1,94 @@
+/* Sense - Luxury/Editorial App Styles */
+
+.App {
+  min-height: 100vh;
+}
+
+/* Typography Utilities */
+.font-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-body {
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+/* Editorial Section Spacing */
+.section-padding {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+/* Headline with Mixed Italic */
+.headline-editorial em {
+  font-style: italic;
+  color: #D4AF37;
+}
+
+/* Image Shadow Evolution */
+.image-shadow {
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 700ms ease;
+}
+
+.image-shadow:hover,
+.group:hover .image-shadow {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* Card with Top Border */
+.card-editorial {
+  border-top: 1px solid #1A1A1A;
+  background: transparent;
+  transition: background-color 500ms ease;
+}
+
+.card-editorial:hover {
+  background: rgba(249, 248, 246, 0.5);
+}
+
+/* Featured Card with Gold Border */
+.card-featured {
+  border-top: 4px solid #D4AF37;
+}
+
+/* Force graph canvas fixes */
+canvas {
+  outline: none !important;
+}
+
+/* Dark section styling */
+.section-dark {
+  background: #1A1A1A;
+  color: #F9F8F6;
+}
+
+.section-dark .text-muted {
+  color: rgba(249, 248, 246, 0.6);
+}
+
+/* Decorative horizontal line */
+.decorative-line {
+  width: 3rem;
+  height: 1px;
+  background: #1A1A1A;
+}
+
+@media (min-width: 768px) {
+  .decorative-line {
+    width: 4rem;
+  }
+}
+
+/* Custom selection color */
+::selection {
+  background: rgba(212, 175, 55, 0.2);
+  color: inherit;
+}
